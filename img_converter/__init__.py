@@ -1,7 +1,7 @@
 from cv2 import cvtColor, resize, COLOR_BGR2GRAY, INTER_AREA
 
-grey_scale_char = ' .:-=+*#%@'
-# grey_scale_char = '@%#*+=-:. '
+# grey_scale_char = ' .:-=+*#%@'
+grey_scale_char = '@%#*+=-:. '
 # grey_scale_char = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. "
 
 
@@ -14,7 +14,8 @@ def scale_img(img, width, height):
 
 
 def grey_to_char(grey_val):
-    return grey_scale_char[int((grey_val * 7) / 255)]
+    return grey_scale_char[
+        len(grey_scale_char) - 1 - int((grey_val * len(grey_scale_char)) / 255)]
 
 
 def img_to_text(img):

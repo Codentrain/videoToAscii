@@ -14,4 +14,4 @@ def build_img():
 
 while True:
     print(build_img())
-    time.sleep(1 / 200)
+    time.sleep(1 / 60)
