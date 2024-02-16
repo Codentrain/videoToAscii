@@ -1,8 +1,8 @@
 from cv2 import cvtColor, resize, COLOR_BGR2GRAY, INTER_AREA
 
 grey_scale_char = ' .:-=+*#%@'
-# greyScalChar = '@%#*+=-:. '
-# greyScalChar = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. "
+# grey_scale_char = '@%#*+=-:. '
+# grey_scale_char = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. "
 
 
 def img_to_grey_scale(img):
